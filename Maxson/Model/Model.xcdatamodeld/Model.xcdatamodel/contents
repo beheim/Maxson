@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13D65" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="MXNEntity_ManyToMany" representedClassName="MXNEntity_ManyToMany" syncable="YES">
+        <attribute name="mxn_int16" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="mxn_roots" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MXNRoot" inverseName="mxn_entity_manyToMany" inverseEntity="MXNRoot" syncable="YES"/>
+    </entity>
+    <entity name="MXNEntity_OneToMany" representedClassName="MXNEntity_OneToMany" syncable="YES">
+        <relationship name="mxn_root" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MXNRoot" inverseName="mxn_entity_oneToMany" inverseEntity="MXNRoot" syncable="YES"/>
+    </entity>
+    <entity name="MXNEntity_OneToOne" representedClassName="MXNEntity_OneToOne" syncable="YES">
+        <relationship name="mxn_root" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MXNRoot" inverseName="mxn_entity_oneToOne" inverseEntity="MXNRoot" syncable="YES"/>
+    </entity>
+    <entity name="MXNRoot" representedClassName="MXNRoot" syncable="YES">
+        <attribute name="mxn_bool" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="mxn_data" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="mxn_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="mxn_decimal" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="mxn_double" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="mxn_int16" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="mxn_int32" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="mxn_int64" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="mxn_string" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mxn_transformable" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="mxn_entity_manyToMany" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MXNEntity_ManyToMany" inverseName="mxn_roots" inverseEntity="MXNEntity_ManyToMany" syncable="YES"/>
+        <relationship name="mxn_entity_oneToMany" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MXNEntity_OneToMany" inverseName="mxn_root" inverseEntity="MXNEntity_OneToMany" syncable="YES"/>
+        <relationship name="mxn_entity_oneToOne" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MXNEntity_OneToOne" inverseName="mxn_root" inverseEntity="MXNEntity_OneToOne" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="MXNRoot" positionX="-4320" positionY="378" width="162" height="238"/>
+        <element name="MXNEntity_OneToOne" positionX="-4050" positionY="621" width="135" height="58"/>
+        <element name="MXNEntity_OneToMany" positionX="-4050" positionY="549" width="135" height="58"/>
+        <element name="MXNEntity_ManyToMany" positionX="-4052" positionY="473" width="137" height="73"/>
+    </elements>
+</model>

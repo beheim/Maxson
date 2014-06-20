@@ -1,0 +1,734 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		44C69AE71939F453002E2535 /* Mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 44C69AE81939F454002E2535 /* Build configuration list for PBXAggregateTarget "Mogenerator" */;
+			buildPhases = (
+				44C69AEB1939F47B002E2535 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Mogenerator;
+			productName = Mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1F375F409BAB4FDB989A678E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA74C553422408F9BF82D3E /* libPods.a */; };
+		44C69A971939F052002E2535 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44C69A961939F052002E2535 /* Foundation.framework */; };
+		44C69A991939F052002E2535 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44C69A981939F052002E2535 /* CoreGraphics.framework */; };
+		44C69A9B1939F052002E2535 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44C69A9A1939F052002E2535 /* UIKit.framework */; };
+		44C69AA11939F053002E2535 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44C69A9F1939F053002E2535 /* InfoPlist.strings */; };
+		44C69AA31939F053002E2535 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C69AA21939F053002E2535 /* main.m */; };
+		44C69AA71939F053002E2535 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C69AA61939F053002E2535 /* AppDelegate.m */; };
+		44C69AAA1939F053002E2535 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44C69AA81939F053002E2535 /* Main_iPhone.storyboard */; };
+		44C69AAD1939F053002E2535 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44C69AAB1939F053002E2535 /* Main_iPad.storyboard */; };
+		44C69AB01939F053002E2535 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C69AAF1939F053002E2535 /* ViewController.m */; };
+		44C69AB21939F053002E2535 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44C69AB11939F053002E2535 /* Images.xcassets */; };
+		44C69AB91939F053002E2535 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44C69AB81939F053002E2535 /* XCTest.framework */; };
+		44C69ABA1939F053002E2535 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44C69A961939F052002E2535 /* Foundation.framework */; };
+		44C69ABB1939F053002E2535 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44C69A9A1939F052002E2535 /* UIKit.framework */; };
+		44C69AC31939F053002E2535 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44C69AC11939F053002E2535 /* InfoPlist.strings */; };
+		44C69AC51939F053002E2535 /* MaxsonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C69AC41939F053002E2535 /* MaxsonTests.m */; };
+		44C69AE01939F172002E2535 /* MXNAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C69ADA1939F172002E2535 /* MXNAdapter.m */; };
+		44C69AE21939F172002E2535 /* NSManagedObject+MXNSerializable.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C69ADF1939F172002E2535 /* NSManagedObject+MXNSerializable.m */; };
+		44C69AE61939F254002E2535 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44C69AE41939F254002E2535 /* Model.xcdatamodeld */; };
+		44C69AF01939F552002E2535 /* MXNRoot.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C69AEF1939F552002E2535 /* MXNRoot.m */; };
+		44C69AF31939F55D002E2535 /* _MXNRoot.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C69AF21939F55D002E2535 /* _MXNRoot.m */; };
+		44C69AF6193A0564002E2535 /* NSManagedObject+MXNComparable.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C69AF5193A0564002E2535 /* NSManagedObject+MXNComparable.m */; };
+		44C69B01193A2297002E2535 /* _MXNEntity_OneToMany.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C69AFE193A2297002E2535 /* _MXNEntity_OneToMany.m */; };
+		44C69B02193A2297002E2535 /* _MXNEntity_OneToOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C69B00193A2297002E2535 /* _MXNEntity_OneToOne.m */; };
+		44C69B07193A22A4002E2535 /* MXNEntity_OneToMany.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C69B04193A22A4002E2535 /* MXNEntity_OneToMany.m */; };
+		44C69B08193A22A4002E2535 /* MXNEntity_OneToOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C69B06193A22A4002E2535 /* MXNEntity_OneToOne.m */; };
+		44C69B11193B2FC5002E2535 /* MXNEntity_ManyToMany.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C69B10193B2FC5002E2535 /* MXNEntity_ManyToMany.m */; };
+		44C69B14193B2FCF002E2535 /* _MXNEntity_ManyToMany.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C69B13193B2FCF002E2535 /* _MXNEntity_ManyToMany.m */; };
+		BED6F370566D49D68236AB67 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA74C553422408F9BF82D3E /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44C69ABC1939F053002E2535 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44C69A8B1939F052002E2535 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44C69A921939F052002E2535;
+			remoteInfo = Maxson;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		44C69A931939F052002E2535 /* Maxson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maxson.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44C69A961939F052002E2535 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		44C69A981939F052002E2535 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		44C69A9A1939F052002E2535 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		44C69A9E1939F053002E2535 /* Maxson-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Maxson-Info.plist"; sourceTree = "<group>"; };
+		44C69AA01939F053002E2535 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		44C69AA21939F053002E2535 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		44C69AA41939F053002E2535 /* Maxson-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Maxson-Prefix.pch"; sourceTree = "<group>"; };
+		44C69AA51939F053002E2535 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		44C69AA61939F053002E2535 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		44C69AA91939F053002E2535 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		44C69AAC1939F053002E2535 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		44C69AAE1939F053002E2535 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		44C69AAF1939F053002E2535 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		44C69AB11939F053002E2535 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		44C69AB71939F053002E2535 /* MaxsonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaxsonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44C69AB81939F053002E2535 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		44C69AC01939F053002E2535 /* MaxsonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MaxsonTests-Info.plist"; sourceTree = "<group>"; };
+		44C69AC21939F053002E2535 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		44C69AC41939F053002E2535 /* MaxsonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaxsonTests.m; sourceTree = "<group>"; };
+		44C69AD91939F172002E2535 /* MXNAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MXNAdapter.h; path = Classes/MXNAdapter.h; sourceTree = "<group>"; };
+		44C69ADA1939F172002E2535 /* MXNAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MXNAdapter.m; path = Classes/MXNAdapter.m; sourceTree = "<group>"; };
+		44C69ADE1939F172002E2535 /* NSManagedObject+MXNSerializable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MXNSerializable.h"; path = "Classes/NSManagedObject+MXNSerializable.h"; sourceTree = "<group>"; };
+		44C69ADF1939F172002E2535 /* NSManagedObject+MXNSerializable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MXNSerializable.m"; path = "Classes/NSManagedObject+MXNSerializable.m"; sourceTree = "<group>"; };
+		44C69AE51939F254002E2535 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		44C69AEE1939F552002E2535 /* MXNRoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MXNRoot.h; path = Maxson/Model/Classes/MXNRoot.h; sourceTree = "<group>"; };
+		44C69AEF1939F552002E2535 /* MXNRoot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MXNRoot.m; path = Maxson/Model/Classes/MXNRoot.m; sourceTree = "<group>"; };
+		44C69AF11939F55D002E2535 /* _MXNRoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _MXNRoot.h; path = Maxson/Model/MOGenerated/_MXNRoot.h; sourceTree = "<group>"; };
+		44C69AF21939F55D002E2535 /* _MXNRoot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _MXNRoot.m; path = Maxson/Model/MOGenerated/_MXNRoot.m; sourceTree = "<group>"; };
+		44C69AF4193A0564002E2535 /* NSManagedObject+MXNComparable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MXNComparable.h"; path = "Classes/NSManagedObject+MXNComparable.h"; sourceTree = "<group>"; };
+		44C69AF5193A0564002E2535 /* NSManagedObject+MXNComparable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MXNComparable.m"; path = "Classes/NSManagedObject+MXNComparable.m"; sourceTree = "<group>"; };
+		44C69AFD193A2297002E2535 /* _MXNEntity_OneToMany.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _MXNEntity_OneToMany.h; path = Maxson/Model/MOGenerated/_MXNEntity_OneToMany.h; sourceTree = "<group>"; };
+		44C69AFE193A2297002E2535 /* _MXNEntity_OneToMany.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _MXNEntity_OneToMany.m; path = Maxson/Model/MOGenerated/_MXNEntity_OneToMany.m; sourceTree = "<group>"; };
+		44C69AFF193A2297002E2535 /* _MXNEntity_OneToOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _MXNEntity_OneToOne.h; path = Maxson/Model/MOGenerated/_MXNEntity_OneToOne.h; sourceTree = "<group>"; };
+		44C69B00193A2297002E2535 /* _MXNEntity_OneToOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _MXNEntity_OneToOne.m; path = Maxson/Model/MOGenerated/_MXNEntity_OneToOne.m; sourceTree = "<group>"; };
+		44C69B03193A22A4002E2535 /* MXNEntity_OneToMany.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MXNEntity_OneToMany.h; path = Maxson/Model/Classes/MXNEntity_OneToMany.h; sourceTree = "<group>"; };
+		44C69B04193A22A4002E2535 /* MXNEntity_OneToMany.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MXNEntity_OneToMany.m; path = Maxson/Model/Classes/MXNEntity_OneToMany.m; sourceTree = "<group>"; };
+		44C69B05193A22A4002E2535 /* MXNEntity_OneToOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MXNEntity_OneToOne.h; path = Maxson/Model/Classes/MXNEntity_OneToOne.h; sourceTree = "<group>"; };
+		44C69B06193A22A4002E2535 /* MXNEntity_OneToOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MXNEntity_OneToOne.m; path = Maxson/Model/Classes/MXNEntity_OneToOne.m; sourceTree = "<group>"; };
+		44C69B0F193B2FC5002E2535 /* MXNEntity_ManyToMany.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MXNEntity_ManyToMany.h; path = Maxson/Model/Classes/MXNEntity_ManyToMany.h; sourceTree = "<group>"; };
+		44C69B10193B2FC5002E2535 /* MXNEntity_ManyToMany.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MXNEntity_ManyToMany.m; path = Maxson/Model/Classes/MXNEntity_ManyToMany.m; sourceTree = "<group>"; };
+		44C69B12193B2FCF002E2535 /* _MXNEntity_ManyToMany.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _MXNEntity_ManyToMany.h; path = Maxson/Model/MOGenerated/_MXNEntity_ManyToMany.h; sourceTree = "<group>"; };
+		44C69B13193B2FCF002E2535 /* _MXNEntity_ManyToMany.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _MXNEntity_ManyToMany.m; path = Maxson/Model/MOGenerated/_MXNEntity_ManyToMany.m; sourceTree = "<group>"; };
+		4FA74C553422408F9BF82D3E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3A15772BFCE4081A1127F0C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44C69A901939F052002E2535 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44C69A991939F052002E2535 /* CoreGraphics.framework in Frameworks */,
+				44C69A9B1939F052002E2535 /* UIKit.framework in Frameworks */,
+				44C69A971939F052002E2535 /* Foundation.framework in Frameworks */,
+				BED6F370566D49D68236AB67 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44C69AB41939F053002E2535 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44C69AB91939F053002E2535 /* XCTest.framework in Frameworks */,
+				44C69ABB1939F053002E2535 /* UIKit.framework in Frameworks */,
+				44C69ABA1939F053002E2535 /* Foundation.framework in Frameworks */,
+				1F375F409BAB4FDB989A678E /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44C69A8A1939F052002E2535 = {
+			isa = PBXGroup;
+			children = (
+				44C69AE31939F235002E2535 /* Model */,
+				44C69AD81939F166002E2535 /* Classes */,
+				44C69A9C1939F052002E2535 /* Maxson */,
+				44C69ABE1939F053002E2535 /* MaxsonTests */,
+				44C69A951939F052002E2535 /* Frameworks */,
+				44C69A941939F052002E2535 /* Products */,
+				E3A15772BFCE4081A1127F0C /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		44C69A941939F052002E2535 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44C69A931939F052002E2535 /* Maxson.app */,
+				44C69AB71939F053002E2535 /* MaxsonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44C69A951939F052002E2535 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44C69A961939F052002E2535 /* Foundation.framework */,
+				44C69A981939F052002E2535 /* CoreGraphics.framework */,
+				44C69A9A1939F052002E2535 /* UIKit.framework */,
+				44C69AB81939F053002E2535 /* XCTest.framework */,
+				4FA74C553422408F9BF82D3E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44C69A9C1939F052002E2535 /* Maxson */ = {
+			isa = PBXGroup;
+			children = (
+				44C69AA51939F053002E2535 /* AppDelegate.h */,
+				44C69AA61939F053002E2535 /* AppDelegate.m */,
+				44C69AA81939F053002E2535 /* Main_iPhone.storyboard */,
+				44C69AAB1939F053002E2535 /* Main_iPad.storyboard */,
+				44C69AAE1939F053002E2535 /* ViewController.h */,
+				44C69AAF1939F053002E2535 /* ViewController.m */,
+				44C69AB11939F053002E2535 /* Images.xcassets */,
+				44C69A9D1939F053002E2535 /* Supporting Files */,
+			);
+			path = Maxson;
+			sourceTree = "<group>";
+		};
+		44C69A9D1939F053002E2535 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44C69A9E1939F053002E2535 /* Maxson-Info.plist */,
+				44C69A9F1939F053002E2535 /* InfoPlist.strings */,
+				44C69AA21939F053002E2535 /* main.m */,
+				44C69AA41939F053002E2535 /* Maxson-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44C69ABE1939F053002E2535 /* MaxsonTests */ = {
+			isa = PBXGroup;
+			children = (
+				44C69AC41939F053002E2535 /* MaxsonTests.m */,
+				44C69ABF1939F053002E2535 /* Supporting Files */,
+			);
+			path = MaxsonTests;
+			sourceTree = "<group>";
+		};
+		44C69ABF1939F053002E2535 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44C69AC01939F053002E2535 /* MaxsonTests-Info.plist */,
+				44C69AC11939F053002E2535 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44C69AD81939F166002E2535 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				44C69AD91939F172002E2535 /* MXNAdapter.h */,
+				44C69ADA1939F172002E2535 /* MXNAdapter.m */,
+				44C69ADE1939F172002E2535 /* NSManagedObject+MXNSerializable.h */,
+				44C69ADF1939F172002E2535 /* NSManagedObject+MXNSerializable.m */,
+				44C69AF4193A0564002E2535 /* NSManagedObject+MXNComparable.h */,
+				44C69AF5193A0564002E2535 /* NSManagedObject+MXNComparable.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		44C69AE31939F235002E2535 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				44C69AE41939F254002E2535 /* Model.xcdatamodeld */,
+				44C69AEC1939F52E002E2535 /* Classes */,
+				44C69AED1939F537002E2535 /* MOGenerated */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		44C69AEC1939F52E002E2535 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				44C69AEE1939F552002E2535 /* MXNRoot.h */,
+				44C69AEF1939F552002E2535 /* MXNRoot.m */,
+				44C69B05193A22A4002E2535 /* MXNEntity_OneToOne.h */,
+				44C69B06193A22A4002E2535 /* MXNEntity_OneToOne.m */,
+				44C69B03193A22A4002E2535 /* MXNEntity_OneToMany.h */,
+				44C69B04193A22A4002E2535 /* MXNEntity_OneToMany.m */,
+				44C69B0F193B2FC5002E2535 /* MXNEntity_ManyToMany.h */,
+				44C69B10193B2FC5002E2535 /* MXNEntity_ManyToMany.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		44C69AED1939F537002E2535 /* MOGenerated */ = {
+			isa = PBXGroup;
+			children = (
+				44C69AF11939F55D002E2535 /* _MXNRoot.h */,
+				44C69AF21939F55D002E2535 /* _MXNRoot.m */,
+				44C69AFF193A2297002E2535 /* _MXNEntity_OneToOne.h */,
+				44C69B00193A2297002E2535 /* _MXNEntity_OneToOne.m */,
+				44C69AFD193A2297002E2535 /* _MXNEntity_OneToMany.h */,
+				44C69AFE193A2297002E2535 /* _MXNEntity_OneToMany.m */,
+				44C69B12193B2FCF002E2535 /* _MXNEntity_ManyToMany.h */,
+				44C69B13193B2FCF002E2535 /* _MXNEntity_ManyToMany.m */,
+			);
+			name = MOGenerated;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44C69A921939F052002E2535 /* Maxson */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44C69AC81939F053002E2535 /* Build configuration list for PBXNativeTarget "Maxson" */;
+			buildPhases = (
+				9201144E96154D9691752D18 /* Check Pods Manifest.lock */,
+				44C69A8F1939F052002E2535 /* Sources */,
+				44C69A901939F052002E2535 /* Frameworks */,
+				44C69A911939F052002E2535 /* Resources */,
+				38DFB410F8FC49BC826F6461 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Maxson;
+			productName = Maxson;
+			productReference = 44C69A931939F052002E2535 /* Maxson.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44C69AB61939F053002E2535 /* MaxsonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44C69ACB1939F053002E2535 /* Build configuration list for PBXNativeTarget "MaxsonTests" */;
+			buildPhases = (
+				AD2F187CE93E4DD9B364D796 /* Check Pods Manifest.lock */,
+				44C69AB31939F053002E2535 /* Sources */,
+				44C69AB41939F053002E2535 /* Frameworks */,
+				44C69AB51939F053002E2535 /* Resources */,
+				362720E9D8D9452BAEE09B3F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44C69ABD1939F053002E2535 /* PBXTargetDependency */,
+			);
+			name = MaxsonTests;
+			productName = MaxsonTests;
+			productReference = 44C69AB71939F053002E2535 /* MaxsonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44C69A8B1939F052002E2535 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Masashi Beheim";
+				TargetAttributes = {
+					44C69AB61939F053002E2535 = {
+						TestTargetID = 44C69A921939F052002E2535;
+					};
+				};
+			};
+			buildConfigurationList = 44C69A8E1939F052002E2535 /* Build configuration list for PBXProject "Maxson" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44C69A8A1939F052002E2535;
+			productRefGroup = 44C69A941939F052002E2535 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44C69A921939F052002E2535 /* Maxson */,
+				44C69AB61939F053002E2535 /* MaxsonTests */,
+				44C69AE71939F453002E2535 /* Mogenerator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44C69A911939F052002E2535 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44C69AAD1939F053002E2535 /* Main_iPad.storyboard in Resources */,
+				44C69AB21939F053002E2535 /* Images.xcassets in Resources */,
+				44C69AAA1939F053002E2535 /* Main_iPhone.storyboard in Resources */,
+				44C69AA11939F053002E2535 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44C69AB51939F053002E2535 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44C69AC31939F053002E2535 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		362720E9D8D9452BAEE09B3F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38DFB410F8FC49BC826F6461 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44C69AEB1939F47B002E2535 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PATH=${PATH}:/usr/local/bin\ncd \"${PROJECT_DIR}/Maxson\"\nmogenerator --human-dir Model/Classes --machine-dir Model/MOGenerated --model \"Model/Model.xcdatamodeld/Model.xcdatamodel\" --template-var arc=true";
+		};
+		9201144E96154D9691752D18 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AD2F187CE93E4DD9B364D796 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44C69A8F1939F052002E2535 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44C69B08193A22A4002E2535 /* MXNEntity_OneToOne.m in Sources */,
+				44C69B01193A2297002E2535 /* _MXNEntity_OneToMany.m in Sources */,
+				44C69AB01939F053002E2535 /* ViewController.m in Sources */,
+				44C69AA71939F053002E2535 /* AppDelegate.m in Sources */,
+				44C69AF01939F552002E2535 /* MXNRoot.m in Sources */,
+				44C69B02193A2297002E2535 /* _MXNEntity_OneToOne.m in Sources */,
+				44C69AF31939F55D002E2535 /* _MXNRoot.m in Sources */,
+				44C69AE61939F254002E2535 /* Model.xcdatamodeld in Sources */,
+				44C69AA31939F053002E2535 /* main.m in Sources */,
+				44C69AF6193A0564002E2535 /* NSManagedObject+MXNComparable.m in Sources */,
+				44C69B07193A22A4002E2535 /* MXNEntity_OneToMany.m in Sources */,
+				44C69B11193B2FC5002E2535 /* MXNEntity_ManyToMany.m in Sources */,
+				44C69B14193B2FCF002E2535 /* _MXNEntity_ManyToMany.m in Sources */,
+				44C69AE21939F172002E2535 /* NSManagedObject+MXNSerializable.m in Sources */,
+				44C69AE01939F172002E2535 /* MXNAdapter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44C69AB31939F053002E2535 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44C69AC51939F053002E2535 /* MaxsonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44C69ABD1939F053002E2535 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44C69A921939F052002E2535 /* Maxson */;
+			targetProxy = 44C69ABC1939F053002E2535 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		44C69A9F1939F053002E2535 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44C69AA01939F053002E2535 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		44C69AA81939F053002E2535 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44C69AA91939F053002E2535 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		44C69AAB1939F053002E2535 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44C69AAC1939F053002E2535 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		44C69AC11939F053002E2535 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44C69AC21939F053002E2535 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44C69AC61939F053002E2535 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44C69AC71939F053002E2535 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44C69AC91939F053002E2535 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3A15772BFCE4081A1127F0C /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Maxson/Maxson-Prefix.pch";
+				INFOPLIST_FILE = "Maxson/Maxson-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		44C69ACA1939F053002E2535 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3A15772BFCE4081A1127F0C /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Maxson/Maxson-Prefix.pch";
+				INFOPLIST_FILE = "Maxson/Maxson-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		44C69ACC1939F053002E2535 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3A15772BFCE4081A1127F0C /* Pods.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Maxson.app/Maxson";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Maxson/Maxson-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MaxsonTests/MaxsonTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		44C69ACD1939F053002E2535 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3A15772BFCE4081A1127F0C /* Pods.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Maxson.app/Maxson";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Maxson/Maxson-Prefix.pch";
+				INFOPLIST_FILE = "MaxsonTests/MaxsonTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		44C69AE91939F454002E2535 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		44C69AEA1939F454002E2535 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44C69A8E1939F052002E2535 /* Build configuration list for PBXProject "Maxson" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44C69AC61939F053002E2535 /* Debug */,
+				44C69AC71939F053002E2535 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44C69AC81939F053002E2535 /* Build configuration list for PBXNativeTarget "Maxson" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44C69AC91939F053002E2535 /* Debug */,
+				44C69ACA1939F053002E2535 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44C69ACB1939F053002E2535 /* Build configuration list for PBXNativeTarget "MaxsonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44C69ACC1939F053002E2535 /* Debug */,
+				44C69ACD1939F053002E2535 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44C69AE81939F454002E2535 /* Build configuration list for PBXAggregateTarget "Mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44C69AE91939F454002E2535 /* Debug */,
+				44C69AEA1939F454002E2535 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		44C69AE41939F254002E2535 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				44C69AE51939F254002E2535 /* Model.xcdatamodel */,
+			);
+			currentVersion = 44C69AE51939F254002E2535 /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = Maxson/Model/Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 44C69A8B1939F052002E2535 /* Project object */;
+}
